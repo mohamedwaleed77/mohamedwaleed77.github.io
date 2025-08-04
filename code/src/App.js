@@ -4,15 +4,14 @@ import ProjectCard from './components/ProjectCard';
 import NavBar from './components/NavBar';
 import Skills from './components/Skills';
 import GoUp from './components/GoUp';
- 
+import Badge from './components/Badge';
  
 function App() {
   return (
 
     <div className='[text-shadow:_0_0px_5px_rgb(255_255_255_/_1)]text-neutral-700 flex flex-col gap-20 font-arial justify-center '>
       <GoUp></GoUp>
- 
- 
+
       <MatrixCanvas></MatrixCanvas> 
       <NavBar></NavBar>
 
@@ -41,7 +40,21 @@ function App() {
     <p className='text-4xl '>SKILLS</p>
     <Skills skills={['HTML & CSS','JavaScript','Python','Ansible','Jenkins','C','Linux','C++']}></Skills>
     </section>
-
+    <section id='badges' className='flex flex-col gap-12 text-center text-white'>
+      <p className='text-4xl '>BADGES</p>
+      <div class='bg-white flex gap-4 items-center justify-center h-32'>
+      <Badge link='https://leetcode.com/u/mohamedwaleed77/' location='200.gif'></Badge>
+      <Badge link='https://leetcode.com/u/mohamedwaleed77/'  location='2024-50.gif'></Badge>
+      <Badge link='https://leetcode.com/u/mohamedwaleed77/'  location='2024-100-new.gif'></Badge>
+      <Badge link='https://leetcode.com/u/mohamedwaleed77/'  location='2550.gif'></Badge>
+      <Badge link='https://leetcode.com/u/mohamedwaleed77/'  location='25100.gif'></Badge>
+      <Badge link='https://www.credly.com/badges/e4304a33-6457-428b-b908-ca0445f1ffd0/'  location='CCNAENSA__1_.png'></Badge>
+      <Badge link='https://www.credly.com/badges/d0b3167e-5486-4290-8eae-3f5e28668583/'   location='CCNAITN__1_.png'></Badge>
+      <Badge link='https://www.credly.com/badges/70914ad7-2d73-4aa8-bbc9-914c64b8ade8/'   location='CCNASRWE__1_.png'></Badge>
+      <Badge link='https://www.credly.com/badges/99c50932-76c3-435a-9362-04dbb0589a7e/'   location='EndpointSecurity.png'></Badge>
+      <Badge link='https://www.credly.com/badges/201e6ace-dfc4-40f1-9211-398cb9dce9e3/public_url'   location='I2CS__1_.png'></Badge>
+      </div>
+    </section>
     <section id='contact'>
         <div  className='bg-white h-72 text-center flex flex-col justify-center gap-4'>
             <p className='text-4xl opacity-100'>CONTACT</p>
