@@ -11,6 +11,7 @@ export default function NavBar() {
         <a href='#about' className='px-3 py-2 rounded-full bg-blue-600'>About</a>
         <a href='#projects' className='px-3 py-2 rounded-full bg-blue-600'>Projects</a>
         <a href='#skills' className='px-3 py-2 rounded-full bg-blue-600'>skills</a>
+        <a href='#badges' className='px-3 py-2 rounded-full bg-blue-600'>badges</a>
         <a href='#contact' className='px-3 py-2 rounded-full bg-blue-600'>contact</a>
         </div>
     </div>

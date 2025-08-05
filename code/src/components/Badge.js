@@ -4,9 +4,9 @@ export default function Badge(props) {
     const location=props.location
     const link=props.link
   return (
-    <div class='w-24'>
+    <div >
         <a href={link} target='_blank'>
-        <img src={location} width={100}></img>
+        <img src={location} width={120}></img>
         </a>
     </div>
   )
