@@ -7,18 +7,26 @@ const MatrixCanvas = () => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
     
-    // Set initial canvas size to full window size
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
     // Characters for the Matrix effect
     const matrixChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     const fontSize = 16;
-    let columns = Math.floor(canvas.width / fontSize);
-    
-    // Array to store the drop position for each column
+    let columns = Math.floor(window.innerWidth / fontSize);
     let drops = Array(columns).fill(1);
     
+    // Function to resize canvas and reinitialize drops
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      columns = Math.floor(canvas.width / fontSize);
+      drops = Array(columns).fill(1); // Reinitialize drops array
+    };
+
+    // Set initial canvas size
+    resizeCanvas();
+
+    // Add resize event listener
+    window.addEventListener('resize', resizeCanvas);
+
     // Function to generate a dynamic color based on time
     const getColor = () => {
       const time = Date.now();
@@ -53,8 +61,11 @@ const MatrixCanvas = () => {
     // Continuously draw the matrix effect every 50ms
     const intervalId = setInterval(drawMatrix, 50);
 
-    // Cleanup the interval when the component unmounts
-    return () => clearInterval(intervalId);
+    // Cleanup the interval and event listener when the component unmounts
+    return () => {
+      clearInterval(intervalId);
+      window.removeEventListener('resize', resizeCanvas);
+    };
   }, []);
 
   return <canvas ref={canvasRef} style={{ position: 'fixed', top: 0, left: 0, zIndex: -1 }} />;
