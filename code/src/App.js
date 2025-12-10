@@ -43,6 +43,7 @@ function App() {
     <section id='badges' className='flex flex-col gap-12 text-center text-white'>
       <p className='text-4xl '>BADGES</p>
       <div class=' flex gap-4 items-center justify-center h-[calc(50%+2%)] flex-wrap'>
+      <Badge link='https://leetcode.com/u/mohamedwaleed77/' location='365_new.gif'></Badge>
       <Badge link='https://leetcode.com/u/mohamedwaleed77/' location='200.gif'></Badge>
       <Badge link='https://leetcode.com/u/mohamedwaleed77/'  location='2024-50.gif'></Badge>
       <Badge link='https://leetcode.com/u/mohamedwaleed77/'  location='2024-100-new.gif'></Badge>
