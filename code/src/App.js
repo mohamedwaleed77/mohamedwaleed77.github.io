@@ -56,22 +56,42 @@ function App() {
       <Badge link='https://www.credly.com/badges/201e6ace-dfc4-40f1-9211-398cb9dce9e3/public_url'   location='I2CS__1_.png'></Badge>
       </div>
     </section>
-    <section id='contact'>
-        <div  className='bg-white h-72 text-center flex flex-col justify-center gap-4'>
-            <p className='text-4xl opacity-100'>CONTACT</p>
-            <p className='opacity-100'>If you'd like to work together, feel free to reach out!</p>
-            <div className='opacity-100 flex justify-center'>
-                <a href="mailto:MohamedWaleedCSE@gmail.com" className='bg-blue-600 text-white p-4 translate-x-4 rounded-full z-10'>Email Me</a>
-                <p className='bg-neutral-800 text-white p-4 rounded-r-full -translate-x-4 w-80 text-end'>MohamedWaleedCSE@gmail.com</p>
-            </div>
-            <div className='opacity-100 flex justify-center'>
-                <p className='opacity-100 bg-blue-600 text-white p-4 translate-x-4 rounded-full z-10'>Call Me</p>
-                <p className='opacity-100 bg-neutral-800 text-white p-4 rounded-r-full -translate-x-4 w-44 text-end'>+201554230714</p>
-            </div>
+    <section id="contact">
+      <div className="bg-white h-auto py-12 text-center flex flex-col justify-center gap-6">
+
+        <p className="text-4xl opacity-100">CONTACT</p>
+        <p className="opacity-100">
+          If you'd like to work together, feel free to reach out!
+        </p>
+
+        {/* Email Row */}
+        <div className="opacity-100 flex flex-col items-center gap-2 sm:flex-row sm:justify-center">
+          <a
+            href="mailto:MohamedWaleedCSE@gmail.com"
+            className="bg-blue-600 text-white p-4 rounded-full sm:translate-x-4 sm:z-10"
+          >
+            Email
+          </a>
+          <p className="bg-neutral-800 text-white p-4 rounded-full sm:rounded-r-full sm:rounded-l-none sm:-translate-x-4 w-80 text-center sm:text-end">
+            MohamedWaleedCSE@gmail.com
+          </p>
         </div>
+
+        {/* Phone Row */}
+        <div className="opacity-100 flex flex-col items-center gap-2 sm:flex-row sm:justify-center">
+          <p className="bg-blue-600 text-white p-4 rounded-full sm:translate-x-4 sm:z-10">
+            Call
+          </p>
+          <p className="bg-neutral-800 text-white p-4 rounded-full sm:rounded-r-full sm:rounded-l-none sm:-translate-x-4 w-44 text-center sm:text-end">
+            +201554230714
+          </p>
+        </div>
+
+      </div>
     </section>
-    <section className='flex items-center text-white justify-center bg-neutral-800 h-20 '>
-    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+
+    <section className="flex items-center text-white justify-center bg-neutral-800 h-20">
+      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
     </section>
     </div>
   );
