@@ -9,12 +9,12 @@ export default function NavBar() {
                 flex flex-col md:flex-row 
                 justify-around items-center w-full">
         <p className='text-4xl text-gray-200 p-2'>MOHAMED WALEED</p>
-        <div className='flex gap-4 pr-4 flex-wrap justify-center'>
-        <a href='#about' className='px-3 py-2 rounded-full bg-blue-600'>About</a>
-        <a href='#projects' className='px-3 py-2 rounded-full bg-blue-600'>Projects</a>
-        <a href='#skills' className='px-3 py-2 rounded-full bg-blue-600'>skills</a>
-        <a href='#badges' className='px-3 py-2 rounded-full bg-blue-600'>badges</a>
-        <a href='#contact' className='px-3 py-2 rounded-full bg-blue-600'>contact</a>
+        <div className='flex gap-2 md:gap-4 pr-4 flex-wrap justify-center'>
+        <a href='#about' className='px-2 py-1 md:px-3 md:py-2 text-sm md:text-base rounded-full bg-blue-600'>About</a>
+        <a href='#projects' className='px-2 py-1 md:px-3 md:py-2 text-sm md:text-base rounded-full bg-blue-600'>Projects</a>
+        <a href='#skills' className='px-2 py-1 md:px-3 md:py-2 text-sm md:text-base rounded-full bg-blue-600'>skills</a>
+        <a href='#badges' className='px-2 py-1 md:px-3 md:py-2 text-sm md:text-base rounded-full bg-blue-600'>badges</a>
+        <a href='#contact' className='px-2 py-1 md:px-3 md:py-2 text-sm md:text-base rounded-full bg-blue-600'>contact</a>
         </div>
     </div>
   )

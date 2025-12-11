@@ -11,8 +11,8 @@ function App() {
 
     <div className='[text-shadow:_0_0px_5px_rgb(255_255_255_/_1)]text-neutral-700 flex flex-col gap-20 font-arial justify-center '>
       <GoUp></GoUp>
-
       <MatrixCanvas></MatrixCanvas> 
+
       <NavBar></NavBar>
 
     <section className='flex flex-col gap-12 text-center text-white h-72 justify-center'>
