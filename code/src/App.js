@@ -137,7 +137,6 @@ Skilled in delivering end-to-end systems and collaborating across teams.</p>
           If you'd like to work together, feel free to reach out!
         </p>
 
-        {/* Email Row */}
         <div className="opacity-100 flex flex-col items-center gap-2 sm:flex-row sm:justify-center">
           <a
             href="mailto:MohamedWaleedCSE@gmail.com"
@@ -149,8 +148,6 @@ Skilled in delivering end-to-end systems and collaborating across teams.</p>
             MohamedWaleedCSE@gmail.com
           </p>
         </div>
-
-        {/* Phone Row */}
         <div className="opacity-100 flex flex-col items-center gap-2 sm:flex-row sm:justify-center">
           <p className="bg-blue-600 text-white p-4 rounded-full sm:translate-x-4 sm:z-10">
             Call
@@ -158,13 +155,17 @@ Skilled in delivering end-to-end systems and collaborating across teams.</p>
           <p className="bg-neutral-800 text-white p-4 rounded-full sm:rounded-r-full sm:rounded-l-none sm:-translate-x-4 w-44 text-center sm:text-end">
             +201554230714
           </p>
+          
         </div>
-
+        <div className='p-4'>
+        <a className="bg-blue-600 text-white p-4 rounded-full sm:translate-x-4 sm:z-10 hover:bg-blue-500" href='mohamed_waleed.pdf' download>Download Resume</a>
+        </div>
       </div>
     </section>
 
     <section className="flex items-center text-white justify-center bg-neutral-800 h-20">
       <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+
     </section>
     </div>
   );
