@@ -10,6 +10,20 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /* Add a bit of extra height to cover the URL bar gap */
+  height: 110vh; 
+  width: 100vw;
+  background-color: black; /* Match your site background */
+}
 @media only screen and (max-width: 600px) {
  
 }

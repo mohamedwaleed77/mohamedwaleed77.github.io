@@ -5,24 +5,42 @@ import NavBar from './components/NavBar';
 import Skills from './components/Skills';
 import GoUp from './components/GoUp';
 import Badge from './components/Badge';
- 
+import Timeline from './components/Experience'
 function App() {
+  const timelineItems = [
+  {
+    job: "DevOps Engineer | MCIT DEPI",
+    date: "06/2024 - 01/2025",
+    description: "Improved Linux skills, implemented CI/CD processes to automate workflows, and developed mini-projects to showcase CI/CD principles, contributed to a graduation project as part of a team and earned a certification."
+  },
+  {
+    job: "DevOps/Software Engineer | Valeo",
+    date: "09/2025 - Recent",
+    description: "Joined the R&D Team, working with CI/CD pipelines, Flask, React, Docker, developing backup and replication scripts, code refactoring, and performed reverse engineering for an undocumented project, while collaborating in Agile teams, gaining hands-on experience with industry-level tools and contributing to demo events. Worked with V-core and Valeo services teams."
+  }
+];
   return (
 
-    <div className='[text-shadow:_0_0px_5px_rgb(255_255_255_/_1)]text-neutral-700 flex flex-col gap-20 font-arial justify-center '>
+    <div className='[text-shadow:_0_0px_5px_rgb(255_255_255_/_1)]text-neutral-700 flex flex-col gap-20 font-arial justify-between '>
       <GoUp></GoUp>
       <MatrixCanvas></MatrixCanvas> 
 
       <NavBar></NavBar>
-
-    <section className='flex flex-col gap-12 text-center text-white h-72 justify-center'>
+    <section className='flex flex-col gap-12 text-center text-white min-h-72 justify-center items-center '>
       <p className='text-4xl' id='about' >ABOUT ME</p>
-      <div>
-      <p className='text-2xl'>Hello! I'm an engineering student with a passion for solving problems.</p>
+      <div className='p-4 w-[90%] backdrop-blur-md bg-neutral-900/20 text-2xl flex flex-col text-center items-center justify-center rounded-lg'>
+      <p className='text-xl '>Results-driven Computer Systems Engineer with expertise in embedded systems, DevOps, and full-stack development. Shifted
+from Mechatronics Engineering, extending studies by a year to gain real-world experience and strong academic performance.
+Skilled in delivering end-to-end systems and collaborating across teams.</p>
       <p className='text-2xl'>Welcome to my portfolio!</p>
       </div>
     </section>
 
+    <section id='Timeline' className='flex flex-col gap-12 text-center  text-white min-h-72 justify-center'>
+      <p className='text-4xl' id='about' >Experience</p>
+      <Timeline items={timelineItems} />
+    </section>
+   
     <section  className='flex flex-col gap-12 items-center text-center text-white'>
       <p className='text-4xl' id='projects' >PROJECTS</p>
       <div className='flex gap-4 justify-center items-center text-neutral-700 flex-wrap w-5/6'>
@@ -38,7 +56,62 @@ function App() {
     
     <section id='skills' className='flex flex-col gap-12 text-center text-white'>
     <p className='text-4xl '>SKILLS</p>
-    <Skills skills={['HTML & CSS','JavaScript','Python','Ansible','Jenkins','C','Linux','C++']}></Skills>
+    <Skills skills={[
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'TypeScript',
+  'React',
+  'Redux Toolkit',
+  'Next.js',
+  'Tailwind CSS',
+  'i18next',
+  'Node.js',
+  'Express',
+  'NestJS',
+  'Socket.io',
+  'FastAPI',
+  'Flask',
+  'GraphQL',
+  'Stripe',
+  'REST APIs',
+  'JWT',
+  'C',
+  'C++',
+  'Python',
+  'Embedded C',
+  'Shell Scripting',
+  'SQL',
+  'MongoDB',
+  'Mongoose',
+  'MySQL',
+  'Sequelize',
+  'Redis',
+  'Docker',
+  'Docker Compose',
+  'Kubernetes',
+  'K3s',
+  'Jenkins',
+  'Git',
+  'SSH',
+  'Ansible',
+  'Prometheus',
+  'Grafana',
+  'cAdvisor',
+  'Linux',
+  'Debian',
+  'CCNA',
+  'MCSA',
+  'RHCSA',
+  'FTP',
+  'VSFTPD',
+  'Reverse Engineering',
+  'Tomcat',
+  'Maven',
+  'Machine Learning',
+  'AutoCAD',
+  'LaTeX'
+]}></Skills>
     </section>
     <section id='badges' className='flex flex-col gap-12 text-center text-white'>
       <p className='text-4xl '>BADGES</p>
@@ -57,10 +130,10 @@ function App() {
       </div>
     </section>
     <section id="contact">
-      <div className="bg-white h-auto py-12 text-center flex flex-col justify-center gap-6">
+      <div className="backdrop-blur-md bg-neutral-900/70 h-auto py-12 text-center flex flex-col justify-center gap-6">
 
-        <p className="text-4xl opacity-100">CONTACT</p>
-        <p className="opacity-100">
+        <p className="text-4xl opacity-100 text-white">CONTACT</p>
+        <p className="opacity-100 text-white">
           If you'd like to work together, feel free to reach out!
         </p>
 
